@@ -1,0 +1,15 @@
+{
+  "name": "sap-workflow-poc",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start:dev": "set NODE_ENV=development & node src/api/server.js",
+    "start:prod": "set NODE_ENV=production & node src/api/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "botbuilder": "^4.17.0"
+  }
+}
