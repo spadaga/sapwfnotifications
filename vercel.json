@@ -1,11 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "api/trigger-workflow.js": {
-      "memory": 1024
-    },
-    "api/process-action.js": {
-      "memory": 1024
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
     }
-  }
+  ]
 }
