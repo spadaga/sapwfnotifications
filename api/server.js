@@ -21,7 +21,7 @@ async function startServer() {
   const express = (await import('express')).default;
   const axios = (await import('axios')).default;
   const { createIndividualApprovalCard, approveWorkflow, rejectWorkflow } = await import('../utils/workflow.js');
-  const { isProduction, teamsWebhookUrl, port, inboxUrl } = await import('../config.js');
+  const { isProduction, teamsWebhookUrl, port, inboxUrl } = await import('../src/config.js');
 
   const app = express();
   app.use(express.json());
