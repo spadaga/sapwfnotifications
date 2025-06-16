@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api"
+  "functions": {
+    "api/trigger-workflow.js": {
+      "memory": 1024
+    },
+    "api/process-action.js": {
+      "memory": 1024
     }
-  ]
+  }
 }
